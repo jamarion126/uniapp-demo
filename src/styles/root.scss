@@ -1,0 +1,9 @@
+html,
+page {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+// 去掉滚动条
+::-webkit-scrollbar{
+  display: none;
+}

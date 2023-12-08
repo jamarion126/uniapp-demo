@@ -1,0 +1,33 @@
+$primary-color: #3786fb;
+$primary-color-1: fade-out($primary-color, 0.7);
+
+@media (prefers-color-scheme: light) {
+  page {
+    --bg-primary: #{$primary-color};
+    --bg-primary-1: #{$primary-color-1};
+    --bg-main: #F7F7F7;
+    --bg-content: #FFFFFF;
+
+    --fg-1: rgba(0, 0, 0, 1);
+    --fg-2: rgba(0, 0, 0, 0.8);
+    --fg-3: rgba(0, 0, 0, 0.5);
+    --fg-4: rgba(0, 0, 0, 0.3);
+    --fg-5: rgba(0, 0, 0, 0.1);
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+  page {
+    --bg-primary: #{$primary-color};
+    --bg-primary-1: #{$primary-color-1};
+    --bg-main: #000000;
+    --bg-content: #1b1b1b;
+
+    --fg-1: rgba(255, 255, 255, 1);
+    --fg-2: rgba(255, 255, 255, 0.8);
+    --fg-3: rgba(255, 255, 255, 0.5);
+    --fg-4: rgba(255, 255, 255, 0.3);
+    --fg-5: rgba(255, 255, 255, 0.1);
+  }
+}

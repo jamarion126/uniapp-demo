@@ -1,0 +1,142 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "Index"
+      }
+    },
+    {
+      "path": "pages/notify/index",
+      "style": {
+        "navigationBarTitleText": "Notify"
+      }
+    },
+    {
+      "path": "pages/account/index",
+      "style": {
+        "navigationBarTitleText": "Account"
+      }
+    },
+    {
+      "path": "pages/category/index",
+      "style": {
+        "navigationBarTitleText": "Category"
+      }
+    },
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationBarTitleText": "Login",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/profile/index",
+      "style": {
+        "navigationBarTitleText": "Profile",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/favourite/index",
+      "style": {
+        "navigationBarTitleText": "Favourite"
+      }
+    },
+    {
+      "path": "pages/cart/index",
+      "style": {
+        "navigationBarTitleText": "My Cart"
+      }
+    },
+    {
+      "path": "pages/order/index",
+      "style": {
+        "navigationBarTitleText": "My Order"
+      }
+    },
+    {
+      "path": "pages/search/index",
+      "style": {
+        "navigationBarTitleText": "Search"
+      }
+    },
+    {
+      "path": "pages/detail/index",
+      "style": {
+        "navigationBarTitleText": "Detail"
+      }
+    },
+    {
+      "path": "pages/classify/index",
+      "style": {
+        "navigationBarTitleText": "Classify"
+      }
+    },
+    {
+      "path": "pages/classify1/index",
+      "style": {
+        "navigationBarTitleText": "Classify"
+      }
+    },
+    {
+      "path": "pages/classify2/index",
+      "style": {
+        "navigationBarTitleText": "Classify"
+      }
+    }
+  ],
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^nut-(.*)?-(.*)": "nutui-uniapp/components/$1$2/$1$2.vue",
+      "^nut-(.*)": "nutui-uniapp/components/$1/$1.vue"
+    }
+  },
+  "subpackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        {
+          "path": "echarts/index",
+          "style": {
+            "navigationBarTitleText": "Echarts"
+          }
+        }
+      ]
+    }
+  ],
+  "globalStyle": {
+    "navigationBarBackgroundColor": "@navBgColor",
+    "navigationBarTextStyle": "@navTxtStyle",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#0D6EFD",
+    "borderStyle": "@tabBarBorderStyle",
+    "backgroundColor": "@tabBarBackgroundColor",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabbar/index.png",
+        "selectedIconPath": "static/tabbar/index-fill.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/notify/index",
+        "iconPath": "static/tabbar/cart.png",
+        "selectedIconPath": "static/tabbar/cart-fill.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/account/index",
+        "iconPath": "static/tabbar/account.png",
+        "selectedIconPath": "static/tabbar/account-fill.png",
+        "text": "我的"
+      }
+    ]
+  }
+}
